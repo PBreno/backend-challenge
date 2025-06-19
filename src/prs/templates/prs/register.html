@@ -1,0 +1,25 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+    <div class="form-wrapper">
+        <h2>Cadastro do jogador UOL</h2>
+    </div>
+    <form
+            action=""
+            method="POST">
+        {% csrf_token %}
+        <div class="form-content">
+            {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ field_id_for_label }}"> {{ field.label }} </label>
+                    {{ field }}
+                </div>
+            {% endfor %}
+        </div>
+         <div class="form-content">
+            <div class="form-group">
+                <button class="btn" type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+{% endblock content %}

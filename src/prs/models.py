@@ -2,6 +2,9 @@ import json
 from pathlib import Path
 
 from django.db import models
+from django.shortcuts import redirect, render
+
+from .forms import RegisterForm
 
 # Create your models here.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,6 +33,22 @@ def read_file():
             return json_data
     except FileNotFoundError as e:
         return e
+
+def register(request):
+
+    form = RegisterForm()
+
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('prs:index')
+
+    return render(
+        request,
+        'prs/register.html',
+        {'form': form,}
+    )
 class Files:
 
     def read(self):
