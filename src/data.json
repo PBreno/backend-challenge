@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Felipe",
+    "email": "felipe@uol.com.br",
+    "phone": "(11) 9999-8888",
+    "codename": "Hulk",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Maria",
+    "email": "maria@example.com",
+    "phone": "(21) 7777-6666",
+    "codename": "Viúva Negra",
+    "group": "Vingadores"
+  },
+  {
+    "name": "João",
+    "email": "joao@teste.net",
+    "phone": "(31) 5555-4444",
+    "codename": "Capitão América",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Ana",
+    "email": "ana@dominio.org",
+    "phone": "(41) 3333-2222",
+    "codename": "Feiticeira Escarlate",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Carlos",
+    "email": "carlos@mail.com",
+    "phone": "(51) 1111-0000",
+    "codename": "Thor",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Sofia",
+    "email": "sofia@email.dev",
+    "phone": "(61) 2222-9999",
+    "codename": "Capitã Marvel",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Pedro",
+    "email": "pedro@site.biz",
+    "phone": "(71) 8888-7777",
+    "codename": "Homem de Ferro",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Laura",
+    "email": "laura@web.info",
+    "phone": "(81) 6666-5555",
+    "codename": "Vespa",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Gabriel",
+    "email": "gabriel@data.co",
+    "phone": "(91) 4444-3333",
+    "codename": "Pantera Negra",
+    "group": "Vingadores"
+  },
+  {
+    "name": "Isabela",
+    "email": "isabela@solution.tech",
+    "phone": "(01) 9876-5432",
+    "codename": "Gamora",
+    "group": "Guardiões da Galáxia"
+  }
+]

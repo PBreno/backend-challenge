@@ -1,0 +1,51 @@
+{% extends 'global/base.html' %}
+{% block content %}
+{% if page %}
+    <div class="responsive-table">
+        <table class="prs-table">
+            <caption class="table-caption">
+                Sistema de Cadastro de Jogadores
+            </caption>
+
+            <thead>
+                <tr class="table-row table-row-header">
+                    <th class="table-header">Nome</th>
+                    <th class="table-header">Email</th>
+                    <th class="table-header">Telefone</th>
+                    <th class="table-header">Codinome</th>
+                    <th class="table-header">Grupo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for player in page %}
+                    <tr class="table-row">
+                        <td class="table-cel"> {{ player.name }}</td>
+                        <td class="table-cel"> {{ player.email }}</td>
+                        <td class="table-cel"> {{ player.phone }} </td>
+                        <td class="table-cel"> {{ player.codename }} </td>
+                        <td class="table-cel"> {{ player.group }}</td>
+                        <td class="table-cel">
+                            <a href="#" class="table-link">
+                                Editar
+                            </a>
+                        </td>
+                        <td class="table-cel">
+                            <a href="#" class="table-link">
+                                Excluir
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+      <div class="single-player">
+        <h1 class="single-player-name">
+            Nenhum Jogador encontrado.
+            <br>
+        </h1>
+    </div>
+{% endif %}
+{% endblock content %}

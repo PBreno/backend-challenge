@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, Ubuntu, 'Segoe UI', Roboto, Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    background: azure;
+}
+
+.header {
+    background: #00001EFF;
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 10, 20%);
+    z-index: 1;
+    position: relative;
+}
+.header-heading {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.header-link {
+    color: #9CD9FFFF;
+    text-decoration: none;
+    transition: filter 300ms ease-in-out;
+}
+
+.content {
+    max-width: 120rem;
+    margin: calc(var(1.5rem)*2) auto;
+    padding: 1.5rem;
+    background: #F5F5FFFF;
+    box-shadow: 2px 2px 5px #00000A33;
+    border-radius: 4px;
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.prs-table {
+    width: 100%;
+    min-width: 60rem;
+    border-collapse: collapse;
+}
