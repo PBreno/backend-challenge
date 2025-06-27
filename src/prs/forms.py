@@ -8,11 +8,16 @@ class RegisterForm(forms.ModelForm):
     name = forms.CharField(
         required=True,
         min_length=3,
+        label='Nome:',
     )
+    name.widget.template_name_label = 'Nome'
     email = forms.EmailField(
         required=True,
+        label='E-mail:',
     )
-    phone = forms.CharField()
+    phone = forms.CharField(
+        label='Telefone:',
+    )
     choices = {
         "1": "Liga da Justiça",
         "2": "Os vingadores"
@@ -20,6 +25,7 @@ class RegisterForm(forms.ModelForm):
     group = forms.ChoiceField(
         widget=forms.RadioSelect,
         choices= choices,
+        label='Quero ser do grupo:'
     )
     #group.
     class Meta:
@@ -27,3 +33,14 @@ class RegisterForm(forms.ModelForm):
         fields = (
             'name', 'email', 'phone',
         )
+
+
+class ContactForm(forms.ModelForm):
+
+    class Meta:
+       fields = (
+           'name',
+           'email',
+           'phone',
+           'group',
+       )

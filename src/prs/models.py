@@ -1,8 +1,10 @@
 import json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from django.db import models
 from django.shortcuts import redirect, render
+from django.urls import reverse
 
 from .forms import RegisterForm
 
@@ -39,16 +41,40 @@ def register(request):
     form = RegisterForm()
 
     if request.method == 'POST':
-        form = RegisterForm(request.POST)
+        data=request.POST
+        form = RegisterForm(data)
+
+        print("===")
+        print('escolhido: ', data['group'])
+        group_chosen(int(data['group']))
+       # print(data['group'])
+        print("===")
+
+
         if form.is_valid():
             form.save()
             return redirect('prs:index')
+
 
     return render(
         request,
         'prs/register.html',
         {'form': form,}
     )
+
+def group_chosen(group: int):
+    codenome = []
+    if group == 1:
+        tree = ET.parse(BASE_DIR / 'referencias/liga_da_justica.xml')
+        root = tree.getroot()
+
+        for codinome in root.findall('codinomes'):
+            for cod in codinome.findall('codinome'):
+                codenome.append(cod.text)
+
+        return codenome
+    else:
+       pass
 class Files:
 
     def read(self):
