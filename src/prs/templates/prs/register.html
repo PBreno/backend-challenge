@@ -5,7 +5,7 @@
         <h2>Cadastro do jogador UOL</h2>
     </div>
     <form
-            action=""
+            action="{{ form_action }}"
             method="POST">
         {% csrf_token %}
         <div class="form-content">
@@ -13,6 +13,7 @@
                 <div class="form-group">
                     <label for="{{ field_id_for_label }}"> {{ field.label }} </label>
                     {{ field }}
+                    {{ form_action }}
                 </div>
             {% endfor %}
         </div>

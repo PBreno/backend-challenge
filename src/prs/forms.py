@@ -19,8 +19,8 @@ class RegisterForm(forms.ModelForm):
         label='Telefone:',
     )
     choices = {
-        "1": "Liga da Justiça",
-        "2": "Os vingadores"
+        "Liga da Justiça": "Liga da Justiça",
+        "Os vingadores": "Os vingadores"
     }
     group = forms.ChoiceField(
         widget=forms.RadioSelect,
