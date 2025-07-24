@@ -13,6 +13,7 @@ def index(request):
     #page_number = request.GET.get('page')
     #page = paginator.get_page(page_number)
 
+
     context = {
         'page': players_registered,
         'site_title': 'Player Registration System',

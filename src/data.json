@@ -1,7 +1,79 @@
-[{
-    "name": "Breno Fr Pombo",
-    "email": "brenopombobp@hotmail.com",
-    "phone": "48996270746",
-    "group": "Liga da Justi\u00e7a",
-    "codinome": "Batman"
-}]
+[
+    {
+        "name": "Breno Pombo",
+        "email": "brenopombobp@hotmail.com",
+        "phone": "48996270746",
+        "group": "Os vingadores",
+        "codename": "Visão"
+    },
+    {
+        "name": "Neymar Júnior",
+        "email": "meninoney@santos.com.br",
+        "phone": "48996270746",
+        "group": "Os vingadores",
+        "codename": "Hulk"
+    },
+    {
+        "name": "Lamine Yamal",
+        "email": "ly@gmail.com",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "Superman"
+    },
+    {
+        "name": "Cristiano Ronaldo",
+        "email": "cr7@gmail.pt",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "Mulher Maravilha"
+    },
+    {
+        "name": "Messi O el",
+        "email": "lm@gmail.pt",
+        "phone": "48996270746",
+        "group": "Os vingadores",
+        "codename": "Feiticeira Escarlate"
+    },
+    {
+        "name": "Messi El Car",
+        "email": "messilei@ar.com",
+        "phone": "48996270746",
+        "group": "Os vingadores",
+        "codename": "Hulk"
+    },
+    {
+        "name": "Messi El Car",
+        "email": "messilei@ar.com",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "\n\t\t\t"
+    },
+    {
+        "name": "Triangulo Bola",
+        "email": "bola@gmail.com",
+        "phone": "48996270746",
+        "group": "Os vingadores",
+        "codename": "Homem de Ferro"
+    },
+    {
+        "name": "Adjunto Dois",
+        "email": "doi@te.com",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "\n\t\t\t"
+    },
+    {
+        "name": "Adjunto Dois re",
+        "email": "doi@te.com",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "\n\t"
+    },
+    {
+        "name": "Adjunto Dois re",
+        "email": "doi@te.com",
+        "phone": "48996270746",
+        "group": "Liga da Justiça",
+        "codename": "Aquaman"
+    }
+]
